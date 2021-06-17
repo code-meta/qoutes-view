@@ -53,7 +53,7 @@ let bg = [
 
 console.log(bg.length);
 
-const clsIndxUP = Math.floor(Math.random() * 10);
+const clsIndxUP = Math.floor(Math.random() * 21);
 wrapper.style.background = bg[clsIndxUP];
 next.addEventListener("click", () => {
   nextText();
