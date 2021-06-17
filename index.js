@@ -10,7 +10,8 @@ const nextText = () => {
   const quotesText = showData[rand].text;
   const quotesAuthor = showData[rand].author;
 
-  
+  console.log(quotesText);
+  console.log(quotesAuthor);
   quotes.innerHTML = "'' " + quotesText + " ''";
   quotesAuthor === null
     ? (author.innerText = "Unknown")
