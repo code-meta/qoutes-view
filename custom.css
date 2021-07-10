@@ -29,6 +29,7 @@ i.far.fa-clone:hover {
 .copiedData{
   opacity: 0;
   width: 0px;
+  height: 0px;
 }
 
 .next {
