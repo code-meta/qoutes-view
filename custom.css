@@ -3,6 +3,7 @@
   padding: 60px 24px 60px 24px;
   border-radius: 4px;
   color: white;
+  position: relative;
 }
 
 .card .card-content {
@@ -12,11 +13,21 @@
 .quotes {
   text-align: center;
   font-weight: 600;
+  margin-top: 2rem !important;
 }
 
 .author {
   text-align: end;
   margin-top: 16px !important;
+}
+
+i.far.fa-clone:hover {
+  color: #0d0606;
+  transition: all .4s ease-in-out;
+}
+
+.copiedData{
+  opacity: 0;
 }
 
 .next {
@@ -25,6 +36,11 @@
   margin-top: 20px;
 }
 
+.copyBtn {
+  position: absolute;
+  right: 26px;
+  top: 22px;
+}
 
 footer {
     position: fixed;
