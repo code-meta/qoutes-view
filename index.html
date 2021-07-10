@@ -11,6 +11,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
@@ -24,6 +27,9 @@
           style="background: indigo"
           class="darken-1 wrapper card waves-effect waves-block waves-light"
         >
+        <button class="copyBtn waves-effect waves-light btn">
+          <i class="far fa-clone"></i>
+        </button>
           <p class="quotes offset-s6 card-content"></p>
 
           <p class="author card-content"></p>
@@ -32,6 +38,8 @@
           </button>
         </div>
       </div>
+
+      <textarea class="copiedData" ></textarea>
     </div>
 
     <footer class="page-footer blue-grey darken-1">
