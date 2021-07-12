@@ -88,6 +88,5 @@
     copiedData.setSelectionRange(0, 99999);
     document.execCommand("copy");
 
-    alert("Your Quote has been Copied!");
   });
 })();
