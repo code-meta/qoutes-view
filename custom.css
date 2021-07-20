@@ -58,6 +58,7 @@ i.far.fa-clone:hover {
   opacity: 0;
   width: 0;
   padding: 0;
+  margin-right: 12px;
 }
 
 .clickedPreve{
