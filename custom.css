@@ -51,6 +51,7 @@ i.far.fa-clone:hover {
 .sizing_btn {
   display: inline-block;
   margin-top: 0;
+  margin-right: 12px;
 }
 
 .preve {
