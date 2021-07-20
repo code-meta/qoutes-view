@@ -23,10 +23,10 @@
 
 i.far.fa-clone:hover {
   color: #0d0606;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
-.copiedData{
+.copiedData {
   opacity: 0;
   pointer-events: none;
 }
@@ -43,12 +43,49 @@ i.far.fa-clone:hover {
   top: 22px;
 }
 
+.All_btn_wrapper {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sizing_btn {
+  display: inline-block;
+  margin-top: 0;
+}
+
+.preve {
+  pointer-events: none;
+  opacity: 0;
+  width: 0;
+  padding: 0;
+}
+
+.clickedPreve{
+  pointer-events: auto;
+  opacity: 1;
+  width: auto;
+  padding: 0 16px;
+}
+
+ul.getList li {
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+p.version {
+  position: absolute;
+  top: 10px;
+  color: #c4c4c4;
+  text-transform: capitalize;
+}
+
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding-top: 0 !important;
-  }
-  
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-top: 0 !important;
+}
