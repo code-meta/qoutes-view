@@ -12,55 +12,87 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
     <!-- font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <!-- custom css  -->
     <link rel="stylesheet" href="./custom.css" />
   </head>
   <body class="blue-grey darken-3">
     <div class="container">
+      <div class="main_title">
+        <span>" True Knowledge exists in knowing that you know nothing "</span>
+        <span class="Byauthor">- Socrates</span>
+      </div>
       <div class="row">
         <div
           style="background: indigo"
           class="darken-1 wrapper card waves-effect waves-block waves-light"
         >
+          <p class="version">alpha version</p>
 
-        <p class="version">alpha version</p>
-
-        <button class="copyBtn waves-effect waves-light btn" onclick="M.toast({html: 'Copied!'})">
-          <i class="far fa-clone"></i>
-        </button>
+          <button
+            class="copyBtn waves-effect waves-light btn"
+            onclick="M.toast({html: 'Copied!'})"
+          >
+            <i class="far fa-clone"></i>
+          </button>
 
           <p class="quotes offset-s6 card-content"></p>
 
           <p class="author card-content"></p>
           <div class="All_btn_wrapper">
-            <button class="preve sizing_btn waves-effect waves-light btn align-center">
-              Last one
+            <button
+              class="preve sizing_btn waves-effect waves-light btn align-center tooltipped"
+              data-position="left"
+              data-tooltip="Last One"
+            >
+              <i class="material-icons">chevron_left</i>
             </button>
-            <button class="next sizing_btn waves-effect waves-light btn align-center">
-              Next
+            <button
+              class="
+                next
+                tooltipped
+                sizing_btn
+                waves-effect waves-light
+                btn
+                align-center
+              "
+              data-position="right"
+              data-tooltip="Next"
+            >
+              <i class="material-icons">chevron_right</i>
             </button>
           </div>
         </div>
-      </div> 
+      </div>
 
-      <ul class="getList">
-        
-      </ul>
+      <ul class="getList"></ul>
 
-
-      <textarea class="copiedData" ></textarea>
+      <textarea class="copiedData"></textarea>
     </div>
     <footer class="page-footer blue-grey darken-1">
       <div class="footer-copyright">
         <div class="container">&copy; 2023 TRHorse IT</div>
       </div>
     </footer>
-
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let elems = document.querySelectorAll(".tooltipped");
+        let instances = M.Tooltip.init(elems, {});
+      });
+    </script>
     <script src="index.js"></script>
   </body>
 </html>
