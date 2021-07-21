@@ -6,7 +6,7 @@
   position: relative;
 }
 
-.main_title {
+div.main_title {
   text-align: center;
   margin: 4rem 0;
   color: #fff;
