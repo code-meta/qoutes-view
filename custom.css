@@ -6,6 +6,23 @@
   position: relative;
 }
 
+.main_title {
+  text-align: center;
+  margin: 4rem 0;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 100;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 6px #f1ff00;
+}
+.main_title span {
+  display: block;
+}
+
+span.Byauthor{
+  text-align: right;
+}
+
 .card .card-content {
   margin: 0;
   padding: 0;
@@ -51,7 +68,6 @@ i.far.fa-clone:hover {
 .sizing_btn {
   display: inline-block;
   margin-top: 0;
-  margin-right: 12px;
 }
 
 .preve {
