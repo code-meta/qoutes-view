@@ -19,6 +19,14 @@ div.main_title {
   display: block;
 }
 
+.text_wrapper {
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid white;
+}
+
 span.Byauthor{
   text-align: right;
 }
