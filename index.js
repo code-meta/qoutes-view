@@ -8,12 +8,18 @@ let showData = "";
 
   next.addEventListener("click", () => {
     preve.classList.add("clickedPreve");
+
+    preve.classList.remove("disabled")
+
   });
 
 const nextText = () => {
   let rand = Math.floor(Math.random() * 1640);
 
   preve.addEventListener("click", () => {
+
+    preve.classList.add("disabled")
+
     const A_llLi = document.querySelectorAll(".allLi");
 
     const getPrevRand = A_llLi[1].innerText;
