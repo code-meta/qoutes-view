@@ -129,5 +129,5 @@ copyBtn.addEventListener("click", () => {
   document.execCommand("copy");
 
 copiedForm.reset()
-alert("reset")
+
 });
