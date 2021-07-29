@@ -106,6 +106,7 @@ const copyBtn = document.querySelector(".copyBtn");
 const Cquotes = document.querySelector(".quotes");
 const Cauthor = document.querySelector(".author");
 const copiedData = document.querySelector(".copiedData");
+const copiedForm = document.querySelector(".copiedForm")
 
 copyBtn.addEventListener("click", () => {
   console.log("clicked");
@@ -127,5 +128,5 @@ copyBtn.addEventListener("click", () => {
   copiedData.setSelectionRange(0, 99999);
   document.execCommand("copy");
 
-copiedData.reset()
+copiedForm.reset()
 });
