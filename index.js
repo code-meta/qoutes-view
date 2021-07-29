@@ -126,4 +126,6 @@ copyBtn.addEventListener("click", () => {
   copiedData.select();
   copiedData.setSelectionRange(0, 99999);
   document.execCommand("copy");
+
+copiedData.reset()
 });
