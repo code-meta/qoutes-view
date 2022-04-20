@@ -4,6 +4,8 @@ const next = document.querySelector(".next");
 const wrapper = document.querySelector(".wrapper");
 const preve = document.querySelector(".preve");
 
+window.navigator.vibrate([200, 100, 200]);
+
 let showData = "";
 
   next.addEventListener("click", () => {
